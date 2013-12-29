@@ -1,4 +1,5 @@
 name: chadev
 markdown: redcarpet
 pygments: true
-baseurl: /chadev.github.io
+root: http://localhost:4000/
+root: http://chadev.github.io

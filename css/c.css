@@ -116,7 +116,7 @@
 		width:-o-calc(70% - 1em);
 		width:-webkit-calc(70% - 1em);
 		width:calc(70% - 1em);
-		overflow-y:scroll;text-align:left}
+		overflow-y:auto;text-align:left}
 
 .calendar .c-specific .s-scheme::-webkit-scrollbar
 	{width:10px}
@@ -125,7 +125,7 @@
 	{background:transparent}
 
 .calendar .c-specific .s-scheme::-webkit-scrollbar-thumb
-	{background:#333}
+	{background:#4cb6ef}
 
 .calendar .c-specific .s-scheme .s-event
 	{padding:0.5em;margin:0.5em 0}

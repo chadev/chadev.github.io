@@ -1,5 +1,16 @@
-name: chadev
-markdown: redcarpet
-pygments: true
-root: http://localhost:4000/
-root: http://chadev.github.io
+# Site settings
+title: Chadev
+description: "A community for Chattanooga Developers"
+url: http://chadev.github.io
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlights: false
+exclude:
+    -   bower_components
+    -   node_modules
+    -   bower.json
+    -   bower.json
+    -   gulpfile.js
+    -   package.json

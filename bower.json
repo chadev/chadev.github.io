@@ -1,0 +1,9 @@
+{
+  "name": "Chadev",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chadev/chadev.github.io",
+  "dependencies": {
+    "bourbon": "~4.0.2",
+    "neat": "~1.6.0"
+  }
+}

@@ -1,0 +1,288 @@
+/* =============================================================================
+   Additional Smart Defaults
+   ========================================================================== */ 
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+img { max-width: 100%; height: auto; -ms-interpolation-mode:bicubic }
+
+a { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+/* =============================================================================
+   Highlight Color
+   ========================================================================== */
+
+::-moz-selection { background: $blue; color: white; text-shadow: none; }
+::selection { background: $blue; color: white; text-shadow: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  @include transition (border .2s ease-in-out);
+
+  &:hover {
+    border-bottom: 1px solid $medium-grey;
+  }
+
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+header {
+  @include pad(0 5%);
+  border-bottom: .2em solid lighten($dark-grey, 25);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  .container {
+    @include outer-container;
+    padding: 1em 0;
+
+    @include media($small) {
+      padding: 0;
+      line-height: 4.5em;
+    }
+
+    @include media($medium) {
+      line-height: 4.75em;
+    }
+
+    @include media($large) {
+      line-height: 5em;
+    }
+
+  }
+
+  .logo {
+    @include span-columns(8);
+    line-height: 1;
+
+    @include media($small) {
+      @include span-columns(4);
+      line-height: inherit;
+    }
+
+    img {
+      width: 180px;
+
+      @include media($small) {
+        width: 200px;
+        vertical-align: middle;
+        margin-bottom: .25em;
+      }
+
+      @include media($medium) {
+        width: 240px;
+      }
+
+    }
+
+  }
+
+  nav {
+    @include span-columns(12);
+    @include omega();
+
+    @include media($small) {
+      @include span-columns(8);
+      text-align: right;
+    }
+
+  }
+
+  nav a {
+    width: 100%;
+    display: inline-block;
+    padding: .5em 0;
+    border-bottom: 1px solid $medium-grey;
+
+    @include media($small) {
+      display: inline;
+      padding: .5em 0;
+      margin: 0 0 0 .75em;
+      border-bottom: none;
+    }
+
+    @include media($large) {
+      margin: 0 0 0 1em;
+    }
+
+  }
+
+  nav a:hover {
+    border-bottom: 1px solid $medium-grey;
+
+    @include media($small) {
+      border-bottom: none;
+    }
+  }
+
+  nav a:last-of-type, nav a:last-of-type:hover  {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  a {
+    font-size: 1.2em;
+    color: $dark-grey;
+    border: none;
+    @include transition (color .2s ease-in-out);
+
+    @include media($large) {
+      font-size: 1.25em;
+    }
+
+    &:hover {
+      color: $blue;
+      border: none;
+    }
+
+  }
+
+}
+
+/*! responsive-nav.js 1.0.32 by @viljamis */
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  @include span-columns(4);
+  @include omega();
+  margin-top: .25em;
+  text-align: right;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@include media($small) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* =============================================================================
+   Featured Section
+   ========================================================================== */
+
+.featured {
+  background-color: $medium-grey;
+  min-height: 15em;
+
+  @include media($small) {
+    min-height: 18em;
+  }
+
+  @include media($medium) {
+    min-height: 22em;
+  }
+
+  @include media($large) {
+    min-height: 25em;
+  }
+
+}
+
+/* =============================================================================
+   Main Section
+   ========================================================================== */
+
+main {
+  @include pad(3% 5% 4% 5%);
+
+  .container {
+    @include outer-container;
+  }
+
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  @include pad(2em 5%);
+  background-color: darken($dark-grey, 10);
+  color: white;
+
+  a {
+    color: darken($medium-grey, 15);
+    padding: .5em 0;
+    border-bottom: none;
+    @include transition (color .2s ease-in-out);
+
+    &:hover {
+      color: $blue;
+      border-bottom: none;
+    }
+
+  }
+
+  .container {
+    @include outer-container;
+  }
+
+  nav {
+    @include span-columns(12);
+    text-align: center;
+
+    @include media($small) {
+      @include span-columns(8);
+      text-align: left;
+    }
+
+    a {
+      margin-right: 1em;
+      text-transform: uppercase;
+    }
+
+  }
+
+  p {
+    @include span-columns(12);
+    margin: .5em 0 0 0;
+    text-align: center;
+
+    @include media($small) {
+      @include span-columns(4);
+      text-align: right;
+      margin: 0;
+    }
+
+  }
+
+}

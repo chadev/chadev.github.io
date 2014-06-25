@@ -2,6 +2,9 @@
 title: Chadev
 description: "A community for Chattanooga Developers"
 url: http://chadev.github.io
+collections:
+    profiles:
+        output: true
 
 # Build settings
 markdown: kramdown

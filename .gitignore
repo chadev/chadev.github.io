@@ -1,6 +1,7 @@
 .DS_Store
 node_modules/
 bower_components/
+_site/
 .sass-cache/
 *.sublime-workspace
 *.sublime-project

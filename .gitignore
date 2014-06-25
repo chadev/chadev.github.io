@@ -4,3 +4,4 @@ bower_components/
 .sass-cache/
 *.sublime-workspace
 *.sublime-project
+*.sw*

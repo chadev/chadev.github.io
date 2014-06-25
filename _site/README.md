@@ -1,4 +1,52 @@
-chadev.github.io
-================
+#Chadev.com
 
-The future home of chadev.com. Woot!
+The future home of chadev.com. Woot!  
+We'll be designing and developing this publicly, so expect to see lots of changes and few bugs ;)
+
+##Instructions for Local Development
+
+To replicate our development environment a number of open source tools are required, specifically:
+
+* [Node](http://nodejs.org)
+* [Gulp](http://gulpjs.com)
+* [Bower](http://bower.io)
+* [Jekyll](http://jekyllrb.com)
+
+##Getting Started
+
+###Install Node
+Simply visit [nodejs.org](http://nodejs.org) and click on the big green “Install” button.
+
+###Install Gulp Globally
+
+~~~ sh
+$ npm install -g gulp
+~~~
+
+###Install Bower Globally
+
+~~~ sh
+$ npm install -g bower
+~~~
+
+
+###Install Jekyll
+
+~~~ sh
+$ gem install jekyll
+~~~
+
+
+###Install Dependencies
+
+Make sure you're in the root project folder.
+
+~~~ sh
+$ npm install
+~~~
+
+###Run Gulp
+
+~~~ sh
+$ gulp
+~~~

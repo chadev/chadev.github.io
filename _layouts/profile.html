@@ -1,0 +1,11 @@
+---
+layout: default-slim
+---
+<section class="dev-profile">
+    <a href="http://github.com/{{ page.github }}">
+    <img href="{{ page.gravatar-url }}" class="profile-gravatar">
+    </a>
+    {% for url in page.urls %}
+    <span class="profile url"><a href="{{ url.url }}">{{ url.name }}</a></span>
+    {% endfor %}
+</section>

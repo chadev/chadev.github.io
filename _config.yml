@@ -17,3 +17,9 @@ exclude:
     -   bower.json
     -   gulpfile.js
     -   package.json
+defaults:
+    -
+        scope:
+            path: profiles
+        values:
+            layout: profile

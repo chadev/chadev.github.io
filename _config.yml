@@ -2,9 +2,11 @@
 title: Chadev
 description: "A community for Chattanooga Developers"
 url: http://chadev.github.io
+
+# Custom collection settings
 collections:
-    profiles:
-        output: true
+  devs:
+    output: false
 
 # Build settings
 markdown: kramdown
@@ -17,9 +19,3 @@ exclude:
     -   bower.json
     -   gulpfile.js
     -   package.json
-defaults:
-    -
-        scope:
-            path: profiles
-        values:
-            layout: profile

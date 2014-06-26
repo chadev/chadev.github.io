@@ -4,7 +4,11 @@
   <body>
     {% include header.html %}
 
-    <div class="featured"></div>
+    {% if page.featured-image %}
+      <div class="featured">
+        <!-- <img src="{{ site.url }}/assets/images/{{ page.featured-image.url }}" alt="{{ page.featured-image.title }}"> -->
+      </div>
+    {% endif %}
 
     <main role="main">
       <div class="container">

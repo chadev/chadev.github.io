@@ -31,5 +31,5 @@ gulp.task('browser-sync', function() {
 // watch for changes
 gulp.task('default', ['jekyll-build', 'compile-sass', 'browser-sync'], function () {  
     gulp.watch(["assets/sass/**/*.scss"], ['compile-sass']);
-    gulp.watch([ "*.yml", "*.md", "_posts/*.md", "*.html", "_includes/*.html", "_layouts/*.html", "assets/**/*"], ['jekyll-build']);
+    gulp.watch([ "*.yml", "*.md", "_devs/*.md", "*.html", "_includes/*.html", "_layouts/*.html", "assets/**/*"], ['jekyll-build']);
 });

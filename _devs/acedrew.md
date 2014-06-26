@@ -7,5 +7,5 @@ urls:
         url: http://acedrew.com
     -   name: twitter
         url: http://twitter.com/acedrew
-layout: profile
+layout: default
 ---

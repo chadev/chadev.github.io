@@ -1,0 +1,37 @@
+---
+layout: default
+title: Devs
+---
+
+{% for page in site.devs %}
+
+  <section class="dev-profile">
+    <a href="http://github.com/{{ page.github }}">
+      <img src="{{ page.gravatar-url }}" class="profile-gravatar">
+    </a>
+
+    {% if page.urls %}
+
+      <div class="profile-url">
+
+        {% for url in page.urls %}
+
+          {% if url.name == "website" %}
+            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/iconmonstr-link-icon.svg" alt=""></a>
+
+          {% elsif url.name == "twitter" %}
+            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/iconmonstr-twitter-icon.svg" alt=""></a>
+
+          {% elsif url.name %}
+            <a href="{{ url.url }}">{{ url.name }}</a>
+          {% endif %}
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
+
+  </section>
+
+{% endfor %}

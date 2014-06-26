@@ -1,7 +1,7 @@
 ---
 name: Kyle Gordy
 github: kylegordy
-gravatar-url: https://avatars2.githubusercontent.com/u/3318020?s=400
+gravatar-url: http://www.gravatar.com/avatar/e5803bf441ae18f5e84529f0a4ee0e4c.png?s=300
 urls:
     -   name: website
         url: http://kgordy.com

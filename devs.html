@@ -6,8 +6,9 @@ title: Devs
 {% for page in site.devs %}
 
   <section class="dev-profile">
-    <a href="http://github.com/{{ page.github }}">
+    <a class="avatar" href="http://github.com/{{ page.github }}">
       <img src="{{ page.gravatar-url }}" class="profile-gravatar">
+      <h2>{{ page.name }}</h2>
     </a>
 
     {% if page.urls %}
@@ -17,10 +18,10 @@ title: Devs
         {% for url in page.urls %}
 
           {% if url.name == "website" %}
-            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/iconmonstr-link-icon.svg" alt=""></a>
+            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/link-icon.svg" alt=""></a>
 
           {% elsif url.name == "twitter" %}
-            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/iconmonstr-twitter-icon.svg" alt=""></a>
+            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/twitter-icon.svg" alt=""></a>
 
           {% elsif url.name %}
             <a href="{{ url.url }}">{{ url.name }}</a>

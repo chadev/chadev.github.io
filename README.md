@@ -45,6 +45,10 @@ Make sure you're in the root project folder.
 $ npm install
 ~~~
 
+~~~ sh
+$ bower install
+~~~
+
 ###Run Gulp
 
 ~~~ sh

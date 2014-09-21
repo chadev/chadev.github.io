@@ -6,3 +6,4 @@ _site/
 *.sublime-workspace
 *.sublime-project
 *.sw*
+*.css.map

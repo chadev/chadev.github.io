@@ -1,26 +1,22 @@
 ---
 layout: default
-featured-image:
-  url: featured-image.jpg
-  title: some title
-  credit: some name
-  creditURL: http://google.com
 ---
-<h1>chadev Code of Conduct</h1>
+
+#Chadev Code of Conduct
 
 All attendees, speakers, sponsors and volunteers at our events are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
 
-tl;dr: Don’t be a Jerk
+tl;dr: Don’t be a Jerk.
 
-<h2>Need Help?</h2>
+##Need Help?
 
-Email the organizers at chadevhelp@gmail.com
+Email the organizers at [chadevhelp@gmail.com](mailto:chadevhelp@gmail.com)
 
-<h2>The Quick Version</h2>
+##The Quick Version
 
 Our events are dedicated to providing a harassment-free community experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, parties, Twitter and other online media. Community participants violating these rules may be sanctioned or expelled from events without a refund at the discretion of the event organisers.
 
-<h2>The Less Quick Version</h2>
+##The Less Quick Version
 
 Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
 
@@ -36,6 +32,6 @@ Conference staff will be happy to help participants contact hotel/venue security
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-Original source and credit: http://2012.jsconf.us/#/about & The Ada Initiative
-Please help by translating or improving: http://github.com/leftlogic/confcodeofconduct.com
+Original source and credit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & The Ada Initiative
+Please help by translating or improving: [http://github.com/leftlogic/confcodeofconduct.com](http://github.com/leftlogic/confcodeofconduct.com)
 This work is licensed under a Creative Commons Attribution 3.0 Unported License

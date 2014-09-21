@@ -1,8 +1,7 @@
 @import "normalize";
-@import "../../bower_components/bourbon/dist/bourbon";
-@import "../../bower_components/neat/app/assets/stylesheets/neat-helpers";
+@import "vendor/bourbon/bourbon";
 @import "grid-settings";
-@import "../../bower_components/neat/app/assets/stylesheets/neat";
+@import "vendor/neat/neat";
 @import "colors";
 @import "fonts";
 @import "typography";

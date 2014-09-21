@@ -1,6 +1,6 @@
 /* =============================================================================
    Additional Smart Defaults
-   ========================================================================== */ 
+   ========================================================================== */
 
 *, *:before, *:after {
   @include box-sizing(border-box);
@@ -46,7 +46,6 @@ header {
   @include pad(0 5%);
   border-bottom: .2em solid lighten($dark-grey, 25);
   font-weight: 400;
-  text-transform: uppercase;
 
   .container {
     @include outer-container;
@@ -137,10 +136,14 @@ header {
   }
 
   a {
-    font-size: 1.2em;
+    font-size: 1.05em;
     color: $dark-grey;
     border: none;
     @include transition (color .2s ease-in-out);
+
+    @include media($medium) {
+      font-size: 1.15em;
+    }
 
     @include media($large) {
       font-size: 1.25em;
@@ -227,7 +230,11 @@ header {
    ========================================================================== */
 
 main {
-  @include pad(5% 5% 6% 5%);
+  @include pad(5% 5% 5.5% 5%);
+
+  @include media($small) {
+    @include pad(3% 5% 3.5% 5%);
+  }
 
   .container {
     @include outer-container;
@@ -272,7 +279,6 @@ footer {
 
     a {
       margin-right: 1em;
-      text-transform: uppercase;
     }
 
   }

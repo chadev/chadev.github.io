@@ -1,7 +1,7 @@
 # Site settings
 title: Chadev
 description: "A community for Chattanooga Developers"
-url: http://chadev.github.io
+url: http://localhost:3000
 
 # Custom collection settings
 collections:

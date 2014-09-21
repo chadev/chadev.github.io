@@ -9,7 +9,6 @@ To replicate our development environment a number of open source tools are requi
 
 * [Node](http://nodejs.org)
 * [Gulp](http://gulpjs.com)
-* [Bower](http://bower.io)
 * [Jekyll](http://jekyllrb.com)
 
 ##Getting Started
@@ -22,13 +21,6 @@ Simply visit [nodejs.org](http://nodejs.org) and click on the big green “Insta
 ~~~ sh
 $ npm install -g gulp
 ~~~
-
-###Install Bower Globally
-
-~~~ sh
-$ npm install -g bower
-~~~
-
 
 ###Install Jekyll
 
@@ -43,10 +35,6 @@ Make sure you're in the root project folder.
 
 ~~~ sh
 $ npm install
-~~~
-
-~~~ sh
-$ bower install
 ~~~
 
 ###Run Gulp

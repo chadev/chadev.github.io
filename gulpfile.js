@@ -11,7 +11,6 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-
 // build the jekyll site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
@@ -27,7 +26,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 // compile sass into both _site/assets/css (for live injecting) and site (for future jekyll builds)
 gulp.task('compile-sass', function () {
     return gulp.src('assets/sass/**/*.scss')
-        .pipe(sass({ sourcemap: true, style: 'compressed'}))
+        .pipe(sass({ style: 'compressed'}))
         .on("error", notify.onError(function (error) {
             return "Dang! " + error.message;
         }))
@@ -47,7 +46,7 @@ gulp.task('imagemin', function () {
 });
 
 // start a server and watch for html and css changes
-gulp.task('browser-sync', ['compile-sass', 'jekyll-build'], function() {  
+gulp.task('browser-sync', ['compile-sass', 'jekyll-build'], function() {
     browserSync.init(['_site/assets/css/*.css'], {
         server: {
             baseDir: '_site'
@@ -56,7 +55,7 @@ gulp.task('browser-sync', ['compile-sass', 'jekyll-build'], function() {
 });
 
 // watch for changes
-gulp.task('default', ['imagemin', 'browser-sync'], function () {  
+gulp.task('default', ['imagemin', 'browser-sync'], function () {
     gulp.watch(['assets/sass/**/*.scss'], ['compile-sass']);
     gulp.watch(['assets/images/**/*'], ['imagemin']);
     gulp.watch([ '*.yml', '*.md', '_devs/*.md', '*.html', '_includes/*.html', '_layouts/*.html'], ['jekyll-rebuild']);

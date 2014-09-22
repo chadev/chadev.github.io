@@ -1,7 +1,7 @@
 # Site settings
 title: Chadev
 description: "A community for Chattanooga Developers"
-url: http://chadev.acedrew.com
+url: http://chadev.github.io
 
 # Custom collection settings
 collections:

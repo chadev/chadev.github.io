@@ -5,6 +5,8 @@ url: http://chadev.github.io
 
 # Custom collection settings
 collections:
+  groups:
+    output: false
   devs:
     output: false
 
@@ -19,3 +21,8 @@ exclude:
     -   bower.json
     -   gulpfile.js
     -   package.json
+
+# Gravatar vars
+gravatar_sizes:
+  devs: 300
+  groups: 300

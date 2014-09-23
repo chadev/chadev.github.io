@@ -16,7 +16,7 @@ title: Groups
         <a class="avatar" href="{{ page.website }}">
     {% endif %}
 
-      <img src="{{ page.gravatar-url }}?s={{ site.gravatar_sizes.groups }}" class="profile-gravatar">
+      <img src="{% include gravatar/image.html size=site.gravatar_sizes.groups id=page.gravatar-id %}" class="profile-gravatar">
       <h2>{{ page.name }}</h2>
     </a>
 

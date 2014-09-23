@@ -3,6 +3,23 @@ title: Chadev
 description: "A community for Chattanooga Developers"
 url: http://chadev.github.io
 
+# Links to include in header/footer
+# For external links add external: true
+links:
+  - title: Devs
+    url: /devs
+  - title: Groups
+    url: /groups
+  - title: Events
+    url: /events
+  - title: Resources
+    url: /resources
+  - title: Code of Conduct
+    url: /coc
+  - title: IRC
+    url: https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev
+    external: true
+
 # Custom collection settings
 collections:
   groups:

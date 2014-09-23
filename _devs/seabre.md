@@ -7,9 +7,5 @@ urls:
         url: http://seabre.github.io
     -   name: twitter
         url: http://twitter.com/seabre
-    -   name: npm
-        url: https://www.npmjs.org/~seabre
-    -   name: clojars
-        url: https://clojars.org/users/seabre
 layout: default
 ---

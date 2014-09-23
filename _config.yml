@@ -5,6 +5,8 @@ url: http://chadev.github.io
 
 # Custom collection settings
 collections:
+  groups:
+    output: false
   devs:
     output: false
 

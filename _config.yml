@@ -3,8 +3,24 @@ title: Chadev
 description: "A community for Chattanooga Developers"
 url: http://chadev.github.io
 
+# Links to include in header/footer
+# For external links add external: true
+links:
+  - title: Devs
+    url: /devs
+  - title: Groups
+    url: /groups
+  - title: Events
+    url: /events
+  - title: Resources
+    url: /resources
+  - title: Code of Conduct
+    url: /coc
+
 # Custom collection settings
 collections:
+  groups:
+    output: false
   devs:
     output: false
 
@@ -19,3 +35,8 @@ exclude:
     -   bower.json
     -   gulpfile.js
     -   package.json
+
+# Gravatar vars
+gravatar_sizes:
+  devs: 300
+  groups: 300

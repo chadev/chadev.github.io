@@ -1,8 +1,24 @@
-@import "normalize";
+// Core variables and mixins
+@import "base/variables";
+@import "base/mixins";
+
+// Vendor
+@import "vendor/normalize";
 @import "vendor/bourbon/bourbon";
-@import "grid-settings";
+@import "base/grid-settings";
 @import "vendor/neat/neat";
-@import "colors";
-@import "fonts";
-@import "typography";
-@import "main";
+
+// Base styles
+@import "base/fonts";
+@import "base/typography";
+@import "base/additional-defaults";
+
+// Layout styles
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";
+@import "layout/devs";
+@import "layout/events";
+
+// Modules
+@import "modules/featured-image";

@@ -1,0 +1,11 @@
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+img { max-width: 100%; height: auto; -ms-interpolation-mode:bicubic }
+
+a { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+// Highlight Color
+::-moz-selection { background: $blue; color: white; text-shadow: none; }
+::selection { background: $blue; color: white; text-shadow: none; }

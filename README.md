@@ -7,12 +7,8 @@ We'll be designing and developing this publicly, so expect to see lots of change
 
 * Fork the github repo
 * Clone your fork to your favorite developer environment
-* Use an existing [developer].md file as a basis for your own
-* Replace all relevant info
-* Replace the gravatar hash with the MD5 hash output by this command:
-~~~ sh
-    echo -n "your_gravatar_email" | md5sum
-~~~
+* Copy the developer template file __\_template/dev.md__ to __\_devs/YourHandle.md__
+* Replace the place holder values
 * Commit and push your changes to your fork
 * Submit a pull request to the master branch of this repo
 

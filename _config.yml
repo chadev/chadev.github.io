@@ -16,9 +16,6 @@ links:
     url: /resources
   - title: Code of Conduct
     url: /coc
-  - title: IRC
-    url: https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev
-    external: true
 
 # Custom collection settings
 collections:

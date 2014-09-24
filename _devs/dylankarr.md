@@ -1,7 +1,7 @@
 ---
 name: Dylan Karr
 github: dylankarr
-gravatar-url: http://www.gravatar.com/avatar/7c49e23f80cfbbc4ebe5b34954788833.png
+gravatar-id: 7c49e23f80cfbbc4ebe5b34954788833
 urls:
     -   name: website
         url: http://dylankarr.com

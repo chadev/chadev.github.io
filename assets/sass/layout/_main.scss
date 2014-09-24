@@ -1,0 +1,12 @@
+main {
+  @include pad(5% 5% 5.5% 5%);
+
+  @include media($small) {
+    @include pad(3% 5% 3.5% 5%);
+  }
+
+  .container {
+    @include outer-container;
+  }
+
+}

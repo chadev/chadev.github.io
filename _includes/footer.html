@@ -1,11 +1,13 @@
 <footer>
   <div class="container">
     <nav>
-      <a href="{{ site.url }}/devs">Devs</a>
-      <a href="#">Groups</a>
-      <a href="{{ site.url }}/events">Events</a>
-      <a href="#">Resources</a>
-      <a href="https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev">IRC</a>
+      {% for link in site.links %}
+        {% if link.external %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+        {% else %}
+        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
     </nav>
     <p>Source on <a href="https://github.com/chadev/chadev.github.io">Github</a></p>
   </div>

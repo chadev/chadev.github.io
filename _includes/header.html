@@ -6,12 +6,13 @@
     </a>
 
     <nav class="nav-collapse" role="navigation">
-      <a href="{{ site.url }}/devs">Devs</a>
-      <a href="{{ site.url }}/groups">Groups</a>
-      <a href="{{ site.url }}/events">Events</a>
-      <a href="{{ site.url }}/resources">Resources</a>
-      <a href="{{ site.url }}/coc">Code of Conduct</a>
-      <a href="https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev">IRC</a>
+      {% for link in site.links %}
+        {% if link.external %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+        {% else %}
+        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
     </nav>
 
   </div>

@@ -7,7 +7,7 @@ title: Devs
 
   <section class="dev-profile">
     <a class="avatar" href="http://github.com/{{ page.github }}">
-      <img src="{{ page.gravatar-url }}?s={{ site.gravatar_sizes.devs }}" class="profile-gravatar">
+      <img src="{% include gravatar/image.html size=site.gravatar_sizes.devs id=page.gravatar-id %}" class="profile-gravatar">
       <h2>{{ page.name }}</h2>
     </a>
 

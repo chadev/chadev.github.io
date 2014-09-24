@@ -9,11 +9,10 @@ We'll be designing and developing this publicly, so expect to see lots of change
 * Clone your fork to your favorite developer environment
 * Use an existing [developer].md file as a basis for your own
 * Replace all relevant info
-* To get the URL for your gravatar, you can use the following command:
+* Replace the gravatar hash with the MD5 hash output by this command:
 ~~~ sh
     echo -n "your_gravatar_email" | md5sum
 ~~~
-* Replace the hash portion of the url with the MD5 hash output by the command
 * Commit and push your changes to your fork
 * Submit a pull request to the master branch of this repo
 

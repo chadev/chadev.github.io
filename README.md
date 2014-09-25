@@ -5,18 +5,11 @@ We'll be designing and developing this publicly, so expect to see lots of change
 
 ##Adding yourself to the developers list
 
-* Fork the github repo
-* Clone your fork to your favorite developer environment
-* Use an existing [developer].md file as a basis for your own
-* Replace all relevant info
-* Replace the gravatar hash with the MD5 hash output by this command:
-~~~ sh
-    echo -n "your_gravatar_email" | md5sum
-~~~
-* Commit and push your changes to your fork
-* Submit a pull request to the master branch of this repo
+We invite anyone who identifies as a developer or is interested in becoming a developer in Chattanooga to join our community.
 
-Feel free to contact us via the #chadev IRC channel on freenode, or email chadevhelp@gmail.com if you have trouble.
+For directions on how to add yourself see [the Wiki page](https://github.com/chadev/chadev.github.io/wiki/Adding-yourself-to-the-Devs-list)
+
+Feel free to contact us via the [#chadev IRC channel on freenode](https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev), or email chadevhelp@gmail.com if you have trouble.
 
 ##Instructions for Local Development
 

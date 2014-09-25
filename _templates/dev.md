@@ -1,6 +1,6 @@
 ---
 name: <Real Name>
-github: <GitHub User name>
+github: <GitHub Username>
 gravatar-id: <hash of you email address for Gravatar>
 urls:
     -   name: website

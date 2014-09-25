@@ -7,8 +7,8 @@ We'll be designing and developing this publicly, so expect to see lots of change
 
 * Fork the github repo
 * Clone your fork to your favorite developer environment
-* Copy the developer template file __\_template/dev.md__ to __\_devs/YourHandle.md__
-* Replace the place holder values
+* Copy the developer template file _\_template/dev.md_ to _\_devs/YourHandle.md_
+* Replace the placeholder values
 * Commit and push your changes to your fork
 * Submit a pull request to the master branch of this repo
 

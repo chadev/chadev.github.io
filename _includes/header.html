@@ -7,11 +7,7 @@
 
     <nav class="nav-collapse" role="navigation">
       {% for link in site.links %}
-        {% if link.external %}
         <a href="{{ link.url }}">{{ link.title }}</a>
-        {% else %}
-        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-        {% endif %}
       {% endfor %}
     </nav>
 

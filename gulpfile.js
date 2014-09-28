@@ -6,6 +6,7 @@ var notify = require('gulp-notify');
 var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
 var cp = require('child_process');
+var os = require('os');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -14,7 +15,7 @@ var messages = {
 // build the jekyll site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+    return cp.spawn(batchify('jekyll'), ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -60,3 +61,9 @@ gulp.task('default', ['imagemin', 'browser-sync'], function () {
     gulp.watch(['assets/images/**/*'], ['imagemin']);
     gulp.watch([ '*.yml', '*.md', '_devs/*.md', '*.html', '_includes/*.html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
+
+// Windows environments may need to run batch versions of scripts.
+function batchify(filename) {
+	var isWin = /^win/.test(os.platform());
+	return isWin ? filename + '.bat' : filename;
+}

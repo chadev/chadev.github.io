@@ -4,7 +4,6 @@ description: "A community for Chattanooga Developers"
 url: http://chadev.github.io
 
 # Links to include in header/footer
-# For external links add external: true
 links:
   - title: Devs
     url: /devs

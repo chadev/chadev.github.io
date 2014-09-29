@@ -85,3 +85,29 @@
   }
 
 }
+
+.callout {
+  @include span-columns(12);
+  @include omega();
+  padding: 1.25em 1.5em;
+  border: 2px solid $light-grey;
+
+  @include media($small) {
+    @include span-columns(8);
+    @include omega();
+  }
+
+  @include media($medium) {
+    @include span-columns(6);
+    @include omega();
+  }
+
+  h2 {
+    line-height: 1;
+  }
+
+  p {
+    margin: .75em 0 0 0;
+  }
+
+}

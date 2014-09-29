@@ -2,14 +2,11 @@
   <div class="container">
     <nav>
       {% for link in site.links %}
-        {% if link.external %}
         <a href="{{ link.url }}">{{ link.title }}</a>
-        {% else %}
-        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-        {% endif %}
       {% endfor %}
     </nav>
     <p>Source on <a href="https://github.com/chadev/chadev.github.io">Github</a></p>
   </div>
 </footer>
-<script src="{{ site.url }}/assets/js/global.js"></script>
+<script src="/assets/js/global.js"></script>
+{% include ga.html %}

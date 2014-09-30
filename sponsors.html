@@ -1,0 +1,46 @@
+---
+layout: default
+title: Sponsors
+---
+
+{% for partner in site.data.partners %}
+
+  <section class="dev-profile">
+    {% if partner.urls %}
+        {% for url in partner.urls %}
+          {% if url.name == "website" %}
+        <a class="avatar" href="{{ url.url }}">
+          {% endif %}
+        {% endfor %}
+    {% else %}
+        <a class="avatar" href="{{ partner.website }}">
+    {% endif %}
+
+      <img src="/assets/images/sponsor_logos/{{ partner.logo }}" class="profile-gravatar">
+      <h2>{{ partner.name }}</h2>
+    </a>
+
+  </section>
+
+{% endfor %}
+
+{% for sponsor in site.data.sponsors %}
+
+  <section class="dev-profile">
+    {% if sponsor.urls %}
+        {% for url in sponsor.urls %}
+          {% if url.name == "website" %}
+        <a class="avatar" href="{{ url.url }}">
+          {% endif %}
+        {% endfor %}
+    {% else %}
+        <a class="avatar" href="{{ sponsor.website }}">
+    {% endif %}
+
+      <img src="/assets/images/sponsor_logos/{{ sponsor.logo }}" class="profile-gravatar">
+      <h2>{{ sponsor.name }}</h2>
+    </a>
+
+  </section>
+
+{% endfor %}

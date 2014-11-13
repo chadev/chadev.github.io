@@ -21,3 +21,11 @@
     urls:
         -   name: website
             url: http://lambdaloungecha.github.io/
+
+-   name: GDG Gigcity
+    github: GDG-Gigcity
+    code-of-conduct: https://developers.google.com/groups/guidelines/
+    gravatar-id:
+    urls:
+      -   name: website
+          url: http://gdggigcity.com/

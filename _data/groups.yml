@@ -1,6 +1,6 @@
 -   name: Chadev Lunch
     github: chadev
-    code-of-conduct: 
+    code-of-conduct: http://chadev.github.io/coc/
     gravatar-id: a7b11f2638c847cc186603a646112c21
     urls:
         -   name: website
@@ -21,3 +21,11 @@
     urls:
         -   name: website
             url: http://lambdaloungecha.github.io/
+
+-   name: GDG Gigcity
+    github: GDG-Gigcity
+    code-of-conduct: https://developers.google.com/groups/guidelines/
+    gravatar-id:
+    urls:
+      -   name: website
+          url: http://gdggigcity.com/

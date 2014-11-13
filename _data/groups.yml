@@ -1,6 +1,23 @@
 -   name: Chadev Lunch
     github: chadev
+    code-of-conduct: 
     gravatar-id: a7b11f2638c847cc186603a646112c21
     urls:
         -   name: website
             url: http://www.meetup.com/chadevs/
+
+-   name: Open Chattanooga
+    github: openchattanooga
+    code-of-conduct: http://openchattanooga.com/code-of-conduct/
+    gravatar-id: 
+    urls:
+        -   name: website
+            url: http://openchattanooga.com/
+
+-   name: Lambda Lounge CHA
+    github: LambdaLoungeCHA
+    code-of-conduct: https://github.com/LambdaLoungeCHA/LambdaLoungeCHA.github.io/blob/master/CodeOfConduct.md
+    gravatar-id: 
+    urls:
+        -   name: website
+            url: http://lambdaloungecha.github.io/

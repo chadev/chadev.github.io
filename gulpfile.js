@@ -59,7 +59,15 @@ gulp.task('browser-sync', ['compile-sass', 'jekyll-build'], function() {
 gulp.task('default', ['imagemin', 'browser-sync'], function () {
     gulp.watch(['assets/sass/**/*.scss'], ['compile-sass']);
     gulp.watch(['assets/images/**/*'], ['imagemin']);
-    gulp.watch([ '*.yml', '*.md', '_devs/*.md', '*.html', '_includes/*.html', '_layouts/*.html'], ['jekyll-rebuild']);
+    gulp.watch([
+        '*.yml',
+        '*.md',
+        '_devs/*.md',
+        '*.html',
+        '_includes/*.html',
+        '_layouts/*.html',
+        '_data/*.yml'
+    ], ['jekyll-rebuild']);
 });
 
 // Windows environments may need to run batch versions of scripts.

@@ -1,7 +1,7 @@
 ---
 name: Elizabeth Ropp
 github: roppem9
-gravatar-id: 1c6c6a65cd7426d142c0c2ab468fb006?s=80
+gravatar-id: 1c6c6a65cd7426d142c0c2ab468fb006
 urls:
     -   name: behance
         url: http://be.net/roppem9

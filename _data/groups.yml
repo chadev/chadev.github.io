@@ -4,3 +4,68 @@
     urls:
         -   name: website
             url: http://www.meetup.com/chadevs/
+
+-   name: CodeXX
+    urls:
+        -   name: website
+            url: http://www.codexxchattanooga.com/
+
+-   name: NoogaJS
+    urls:
+        -   name: website
+            url: http://noogajs.org/
+
+-   name: Lambda Lounge
+    urls:
+        -   name: website
+            url: http://lambdaloungecha.github.io
+
+-   name: Code & Creativity
+    urls:
+        -   name: website
+            url: http://www.codeandcreativity.com/
+
+-   name: Carbon Five Hack Night
+    urls:
+        -   name: website
+            url: http://www.meetup.com/Carbon-Five-Chattanooga-Hack-Nights/
+
+-   name: Open Chattanooga
+    urls:
+        -   name: website
+            url: http://openchattanooga.com
+
+-   name: Google Dev Group
+    urls:
+        -   name: website
+            url: http://gdggigcity.com/
+
+-   name: Drupal group
+    urls:
+        -   name: website
+            url: https://groups.drupal.org/chattanooga-tn
+
+-   name: Ruby Group
+    urls:
+        -   name: website
+            url: http://www.meetup.com/chattanoogaruby/
+
+-   name: Python Group
+    urls:
+        -   name: website
+            url:
+
+-   name: CHADNUG (.NET group)
+    urls:
+        -   name: website
+            url: http://www.chadnug.com/
+
+-   name: Chadoop
+    urls:
+        -   name: website
+            url: http://www.meetup.com/CHadoop/
+
+-   name: PHP Group
+    urls:
+        -   name: website
+            url: http://www.meetup.com/chattanoogaphp/

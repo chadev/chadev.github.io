@@ -6,6 +6,6 @@ urls:
     -   name: website
         url: http://acedrew.com
     -   name: twitter
-        url: http://twitter.com/acedrew
+        url: https://twitter.com/tcausey808
 layout: default
 ---

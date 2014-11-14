@@ -7,7 +7,5 @@ urls:
         url: http://jwspain.co/
     -   name: twitter
         url: https://twitter.com/jwsmusic
-    -   name: google+
-        url: https://plus.google.com/+JustinSpainisawesome/posts
 layout: default
 ---

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-#Chadev Code of Conduct Acceptance Guidelines
+#Chadev Code of Conduct Acceptance Requirements
 
 In order to be a recognized group partner with Chadev, your group should have a code of conduct. The code of conduct should include the following:
 

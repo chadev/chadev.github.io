@@ -1,17 +1,17 @@
-.featured {
-  background-color: $medium-grey;
-  min-height: 15em;
+// .featured {
+//   background-color: $medium-grey;
+//   min-height: 15em;
 
-  @include media($small) {
-    min-height: 18em;
-  }
+//   @include media($small) {
+//     min-height: 18em;
+//   }
 
-  @include media($medium) {
-    min-height: 22em;
-  }
+//   @include media($medium) {
+//     min-height: 22em;
+//   }
 
-  @include media($large) {
-    min-height: 25em;
-  }
+//   @include media($large) {
+//     min-height: 25em;
+//   }
 
-}
+// }

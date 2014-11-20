@@ -6,7 +6,6 @@ layout: default
 
 In order to be a recognized group partner with Chadev, your group should have a code of conduct. The code of conduct should include the following:
 
-* Include a policy on anti-harassment.
 * A anti-harassment policy, which at a minimum, should include language that specifically does not tolerate harassment, in any form, based on the following:
   * gender
   * age

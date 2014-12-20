@@ -23,7 +23,7 @@ function displayEvents(data) {
         obj     =   {};
         obj.title   =   items[j].summary.replace('/', '/<wbr>');
         obj.content =   autolink(items[j].description);
-        obj.start   =   new Date(items[j].start.dateTime);
+        obj.start   =   new Date((items[j].start.dateTime) ? items[j].start.dateTime : items[j].start.date);
         obj.month   =   months[obj.start.getMonth()];
         obj.date    =   obj.start.getDate();
         obj.day     =   days[obj.start.getDay()]

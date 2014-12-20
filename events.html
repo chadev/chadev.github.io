@@ -35,9 +35,6 @@ layout: default
             {{/events.length}}
         {% endraw %}
         </script>
-        <script src="http://www.google.com/jsapi"></script>
         <script src="/assets/js/mustache.js"></script>
-        <script src="/assets/js/viewcal.js"></script>
-        <script type="text/javascript">
-            loadCalendar('https://www.google.com/calendar/feeds/4qc3thgj9ocunpfist563utr6g@group.calendar.google.com/public/full');
-        </script>
+        <script src="/assets/js/events.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>

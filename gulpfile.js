@@ -64,6 +64,7 @@ gulp.task('default', ['imagemin', 'browser-sync'], function () {
         '*.md',
         '_devs/*.md',
         '*.html',
+        '*.json',
         '_includes/*.html',
         '_layouts/*.html',
         '_data/*.yml'

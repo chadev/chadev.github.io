@@ -3,7 +3,8 @@ layout: default
 title: Devs
 ---
 
-{% for page in site.devs %}
+{% assign sorted_devs = site.devs | sort:"name" %}
+{% for page in sorted_devs %}
 
   <section class="dev-profile">
     <a class="avatar" href="http://github.com/{{ page.github }}">

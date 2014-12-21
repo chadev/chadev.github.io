@@ -1,17 +1,11 @@
-// .featured {
-//   background-color: $medium-grey;
-//   min-height: 15em;
+.featured {
+  @include media($large) {
+    max-height: 550px;
+    overflow: hidden;
+  }
 
-//   @include media($small) {
-//     min-height: 18em;
-//   }
+  img {
+    width: 100%;
+  }
 
-//   @include media($medium) {
-//     min-height: 22em;
-//   }
-
-//   @include media($large) {
-//     min-height: 25em;
-//   }
-
-// }
+}

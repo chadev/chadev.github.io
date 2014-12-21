@@ -3,7 +3,8 @@ layout: json
 ---
 {
     "devs": [
-{% for page in site.devs %}
+        {% assign sorted_devs = site.devs | sort:"name" %}
+        {% for page in sorted_devs %}
         {
             "name": "{{ page.name }}",
             "github": "{{ page.github }}",

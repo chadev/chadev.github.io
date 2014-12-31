@@ -50,3 +50,13 @@ $ npm install
 ~~~ sh
 $ gulp
 ~~~
+
+##Getting started with Travis CI
+
+###Environment Variables To Configure On Travis
+
+* GH_TOKEN - An OAuth token that has access to your repo.
+* GH_REF - The repo that Travis will push the resulting site to.
+* GH_BRANCH (optional) - The branch that Travis will push the resulting site to. Default: gh-pages
+* GH_USER (optional) - User to commit as. Default: Travis-CI
+* GH_EMAIL (optional) - E-mail to commit as. Default: travis@travis-ci.org

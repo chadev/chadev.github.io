@@ -1,9 +1,10 @@
 language: node_js
 node_js:
   - "0.11"
-  - "0.10"
 before_script:
   - npm install -g gulp
+  - gem install jekyll
+  - npm install
 script: ./scripts/ci/run_build.sh
 after_script:
   - ./scripts/ci/run_deploy.sh

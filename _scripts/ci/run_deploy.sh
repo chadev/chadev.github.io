@@ -5,10 +5,10 @@ EMAIL=${GH_EMAIL-travis@travis-ci.org}
 node build.js
 (
   mkdir travis-output-repo
-  git config user.name "${USERNAME}"
-  git config user.email "${EMAIL}"
   git clone "https://${GH_TOKEN}@${GH_REF}" travis-output-repo
   cd travis-output-repo
+  git config user.name "${USERNAME}"
+  git config user.email "${EMAIL}"
   git checkout --orphan ${BRANCH}
   git rm -rf .
   cp -R ../_site/* ./

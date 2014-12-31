@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-gulp build-jekyll compile-sass imagemin
+gulp jekyll-build compile-sass imagemin

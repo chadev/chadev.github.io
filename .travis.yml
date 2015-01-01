@@ -7,8 +7,7 @@ before_script:
 - npm install
 - chmod -R +x ./_scripts/ci/
 script: ./_scripts/ci/run_build.sh
-after_script:
-  - ./_scripts/ci/run_deploy_prepare.sh
+before_deploy: ./_scripts/ci/run_deploy_prepare.sh
 deploy:
   provider: heroku
   api_key:

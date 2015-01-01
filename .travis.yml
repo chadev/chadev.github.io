@@ -11,9 +11,9 @@ after_script:
 - ./_scripts/ci/run_deploy_prepare.sh
 deploy:
   provider: heroku
-  api-key:
-    secure: PPmldvf0O0iq2Sv4Vq7s0kdWaRcLcuPqnbhpiv8NnqMex5w4sf7W0qbMfip+0Tl7Y/y7KkLkKG0d7lXBFixE3utLqi110ZLwDuUBM/ARyPx3koFHBHgz5a4Cu70QReDAmCVWEC7mGMkS3vuuApnQeIXqE8KbOnAbHq45ab7+F4U=
+  api_key:
+    secure: jWcGv5Ignv+FtcaIHvmfrmgTdmNwJtinD4sdJx5PEtJd9npBd+apRJR2oKtmHi6fVh57B0jIEbc72F6gInsC3LvmRKZoyWdoN22mjMnR5Xi5czkV1Fj40OljRHYCf3D90yjPSDOnDWZKa61/vu8Z9MCfciccF8JclNHX8VjwCeo=
   app: strangewill-chadev
   on:
     repo: StrangeWill/chadev.github.io
-    all_branches: true
+    branch: travis-ci

@@ -4,6 +4,7 @@ node_js:
 before_script:
 - npm install -g gulp
 - gem install jekyll
+- gem install heroku
 - npm install
 - chmod -R +x ./_scripts/ci/
 script: ./_scripts/ci/run_build.sh

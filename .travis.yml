@@ -1,11 +1,19 @@
 language: node_js
 node_js:
-  - "0.11"
+- '0.11'
 before_script:
-  - npm install -g gulp
-  - gem install jekyll
-  - npm install
-  - chmod -R +x ./_scripts/ci/
+- npm install -g gulp
+- gem install jekyll
+- npm install
+- chmod -R +x ./_scripts/ci/
 script: ./_scripts/ci/run_build.sh
 after_script:
-  - ./_scripts/ci/run_deploy.sh
+- ./_scripts/ci/run_deploy_prepare.sh
+deploy:
+  provider: heroku
+  api_key:
+    secure: PPmldvf0O0iq2Sv4Vq7s0kdWaRcLcuPqnbhpiv8NnqMex5w4sf7W0qbMfip+0Tl7Y/y7KkLkKG0d7lXBFixE3utLqi110ZLwDuUBM/ARyPx3koFHBHgz5a4Cu70QReDAmCVWEC7mGMkS3vuuApnQeIXqE8KbOnAbHq45ab7+F4U=
+  app: strangewill-chadev
+  on:
+    repo: StrangeWill/chadev.github.io
+    all_branches: true

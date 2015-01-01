@@ -1,0 +1,26 @@
+.event {
+  border: 2px solid $light-grey;
+  margin-bottom: 1em;
+  
+  h3 {
+    padding-bottom: 0;
+  }
+  
+  > * {
+    padding: .2em .4em;
+  }
+  
+  .event-details {
+    font-size: 0.75em;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+  }
+  
+  address {
+    display: inline-block; 
+    
+    &::before {
+      content: "|";
+    }
+  }
+}

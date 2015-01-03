@@ -15,20 +15,9 @@ Feel free to contact us via the [#chadev IRC channel on freenode](https://kiwiir
 
 To replicate our development environment a number of open source tools are required, specifically:
 
-* [Node](http://nodejs.org)
-* [Gulp](http://gulpjs.com)
 * [Jekyll](http://jekyllrb.com)
 
 ##Getting Started
-
-###Install Node
-Simply visit [nodejs.org](http://nodejs.org) and click on the big green “Install” button.
-
-###Install Gulp Globally
-
-~~~ sh
-$ npm install -g gulp
-~~~
 
 ###Install Jekyll
 
@@ -36,17 +25,18 @@ $ npm install -g gulp
 $ gem install jekyll
 ~~~
 
-
-###Install Dependencies
-
-Make sure you're in the root project folder.
+###Install Sass
 
 ~~~ sh
-$ npm install
+$ gem install sass
 ~~~
 
-###Run Gulp
+###Run Jekyll Server
 
 ~~~ sh
-$ gulp
+$ jekyll serve
 ~~~
+
+###Open Browser
+
+Navigate to http://localhost:4000/

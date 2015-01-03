@@ -1,5 +1,4 @@
 .event {
-  border: 2px solid $light-grey;
   margin-bottom: 1em;
   
   h3 {
@@ -8,12 +7,16 @@
   
   > * {
     padding: .2em .4em;
+    line-height: 1.25em;
   }
   
   .event-details {
     font-size: 0.75em;
-    border-top: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
+    padding-left: .6em;
+  }
+  
+  .notes {
+    font-size: .9em;
   }
   
   address {

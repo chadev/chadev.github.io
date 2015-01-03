@@ -31,6 +31,12 @@ $ gem install jekyll
 $ gem install sass
 ~~~
 
+###(If on Windows) Install wdm
+
+~~~ sh
+$ gem install wdm
+~~~
+
 ###Run Jekyll Server
 
 ~~~ sh

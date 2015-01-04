@@ -7,4 +7,3 @@ _site/
 *.sublime-project
 *.sw*
 *.css.map
-Gemfile.lock

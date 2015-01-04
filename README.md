@@ -19,22 +19,16 @@ To replicate our development environment a number of open source tools are requi
 
 ##Getting Started
 
-###Install Jekyll
+###Install bundler
 
 ~~~ sh
-$ gem install jekyll
+$ gem install bundler
 ~~~
 
-###Install Sass
+###Have bundler resolve your dependencies.
 
 ~~~ sh
-$ gem install sass
-~~~
-
-###(If on Windows) Install wdm
-
-~~~ sh
-$ gem install wdm
+$ bundle install
 ~~~
 
 ###Run Jekyll Server

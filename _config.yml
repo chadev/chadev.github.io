@@ -35,6 +35,9 @@ exclude:
     -   gulpfile.js
     -   package.json
 
+sass:
+  sass_dir: css
+
 # Gravatar vars
 gravatar_sizes:
   devs: 300

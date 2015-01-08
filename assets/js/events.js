@@ -1,4 +1,9 @@
 function autolink(text) {
+    if(typeof(text) == 'undefined')
+    {
+      return text;
+    }
+
     // http://jsfiddle.net/kachibito/hEgvc/1/light/
     return text.replace(/((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g,"<a href='$1'>$1</a>");
 }

@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-        <main id="calendar">
+        <div id="calendar">
             <noscript>
                 Sorry, you need JavaScript to view this page
                 <div class="calendar-container">
                 <iframe src="https://www.google.com/calendar/embed?title=Chadev%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=4qc3thgj9ocunpfist563utr6g%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
             </noscript>
-        </main>
+        </div>
 
         <script type="text/mustache" id="template">
         {% raw %}
@@ -20,7 +20,7 @@ layout: default
                     <div class="event-details">
                         <time class="block">
                             <span class="day"> {{ day }}</span>
-                            <span class="date">{{ month }} {{ date }} </span> 
+                            <span class="date">{{ month }} {{ date }} </span>
                             <span class="time"> {{ time }}</span>
                         </time>
                         {{#address}}

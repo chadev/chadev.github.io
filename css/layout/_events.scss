@@ -1,26 +1,17 @@
 .event {
-  margin-bottom: 1em;
-  
-  h3 {
-    padding-bottom: 0;
-  }
-  
-  > * {
-    padding: .2em 0;
-    line-height: 1.25em;
-  }
-  
+  margin: 2em 0;
+
   .event-details {
     font-size: 0.75em;
   }
-  
+
   .notes {
     font-size: .9em;
   }
-  
+
   address {
-    display: inline-block; 
-    
+    display: inline-block;
+
     &::before {
       content: "|";
     }

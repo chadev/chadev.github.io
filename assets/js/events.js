@@ -104,7 +104,7 @@ function displayEvents(data) {
     return hour(start) + ":" + minutes(start);
 
     function hour(time) {
-      var h = time.getUTCHours();
+      var h = time.getHours();
       return h > 12 ? h - 12 : h;
     }
 
@@ -116,7 +116,7 @@ function displayEvents(data) {
   }
 
   function meridian(time) {
-    return time.getUTCHours() > 12 ? 'PM' : 'AM';
+    return time.getHours() >= 12 ? 'PM' : 'AM';
   }
 
   function prettyDate(start) {

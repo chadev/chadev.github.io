@@ -27,7 +27,7 @@ function init() {
   window.tmpl = document.getElementById('template').innerHTML;
   window.cal.innerHTML = '';
   window.body.classList.add('loading');
-  gapi.client.setApiKey('AIzaSyBjug0eGB3rlZPOKN-C5cebniE8at53-G4');
+  gapi.client.setApiKey('AIzaSyCp_IflIV150pu3Quu-XDIaM7tMYlfO4DQ');
   gapi.client.load('calendar', 'v3').then(execute);
 }
 

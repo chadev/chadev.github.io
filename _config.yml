@@ -34,7 +34,8 @@ exclude:
     -   package.json
 
 sass:
-  sass_dir: css
+  sass_dir: assets/sass
+  style: :compressed
 
 # Gravatar vars
 gravatar_sizes:

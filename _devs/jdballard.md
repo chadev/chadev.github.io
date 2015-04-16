@@ -7,5 +7,7 @@ urls:
         url: http://twitter.com/QixDJ
     -   name: facebook
         url: https://www.facebook.com/joshua.ballard.3110
+    -   name: stackoverflow
+        url: https://stackoverflow.com/users/510036/qix
 layout: default
 ---

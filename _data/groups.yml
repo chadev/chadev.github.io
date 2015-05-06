@@ -9,7 +9,7 @@
 -   name: Open Chattanooga
     github: openchattanooga
     code-of-conduct: http://openchattanooga.com/code-of-conduct/
-    gravatar-id: 0c1cc9566ab1214763adf1c06faaec81 
+    gravatar-id: 0c1cc9566ab1214763adf1c06faaec81
     urls:
         -   name: website
             url: http://openchattanooga.com/
@@ -17,7 +17,7 @@
 -   name: Lambda Lounge CHA
     github: LambdaLoungeCHA
     code-of-conduct: https://github.com/LambdaLoungeCHA/LambdaLoungeCHA.github.io/blob/master/CodeOfConduct.md
-    gravatar-id: 
+    gravatar-id:
     urls:
         -   name: website
             url: http://lambdaloungecha.github.io/
@@ -29,3 +29,11 @@
     urls:
       -   name: website
           url: http://gdggigcity.com/
+
+-   name: Chadev Python
+    github: chadev
+    code-of-conduct: http://chadev.github.io/coc/
+    gravatar-id:
+    urls:
+      -   name: website
+          url: http://www.meetup.com/Chattanooga-Python-User-Group/

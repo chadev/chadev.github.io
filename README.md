@@ -15,38 +15,40 @@ Feel free to contact us via the [#chadev IRC channel on freenode](https://kiwiir
 
 To replicate our development environment a number of open source tools are required, specifically:
 
-* [Node](http://nodejs.org)
-* [Gulp](http://gulpjs.com)
 * [Jekyll](http://jekyllrb.com)
 
 ##Getting Started
 
-###Install Node
-Simply visit [nodejs.org](http://nodejs.org) and click on the big green “Install” button.
-
-###Install Gulp Globally
+###Install bundler
 
 ~~~ sh
-$ npm install -g gulp
+$ gem install bundler
 ~~~
 
-###Install Jekyll
+###Have bundler resolve your dependencies
 
 ~~~ sh
-$ gem install jekyll
+$ bundle install
 ~~~
 
-
-###Install Dependencies
-
-Make sure you're in the root project folder.
+###Run Jekyll Server
 
 ~~~ sh
-$ npm install
+$ jekyll serve
 ~~~
 
-###Run Gulp
+###Open Browser
 
-~~~ sh
-$ gulp
-~~~
+Navigate to http://localhost:4000/
+
+##Acquiring an API key for the events page
+
+1. Go to the [Google Developers Console](https://console.developers.google.com).
+2. Create a new project.
+3. In the sidebar on the left, expand APIs & auth. Next, click APIs. In the list of APIs, make sure the calendar API is turned on.
+4. In the sidebar on the left, select Credentials.
+5. Click Create new Key and select Browser Key.
+6. Enter `*localhost:4000/*` in the *"Accepts Requests From"* text box and click create.
+7. Copy the new API key and replace the one located in the [event.js file](assets/js/events.js).
+8. It should look something like `gapi.client.setApiKey('YOUR API KEY);`.
+9. Wait a few moments, then navigate to [http://localhost:4000/events/](http://localhost:4000/events/) to make sure it worked.

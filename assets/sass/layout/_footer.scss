@@ -1,24 +1,17 @@
 footer {
   @include pad(2em 5%);
   background-color: darken($dark-grey, 10);
-  color: white;
 
-  a {
-    color: darken($medium-grey, 15);
-    padding: .5em 0;
-    border-bottom: none;
-    white-space: nowrap;
-    @include transition (color .2s ease-in-out);
-
-    &:hover {
-      color: $blue;
-      border-bottom: none;
-    }
-
+  @include media($small) {
+    @include pad(2em 5% 1em 5%);
   }
 
   .container {
     @include outer-container;
+  }
+
+  a, a:hover {
+    border-bottom: none;
   }
 
   nav {
@@ -26,25 +19,61 @@ footer {
     text-align: center;
 
     @include media($small) {
-      @include span-columns(8);
+      @include span-columns(7);
       text-align: left;
     }
 
+    @include media($medium) {
+      @include span-columns(8);
+    }
+
     a {
+      color: darken($medium-grey, 15);
+      @include transition (color .2s ease-in-out);
+      white-space: nowrap;
+      padding: .5em 0;
       margin-right: 1em;
+
+      &:hover {
+        color: #fff;
+      }
+
     }
 
   }
 
-  p {
+  .social {
     @include span-columns(12);
-    margin: .5em 0 0 0;
+    margin-top: 1em;
     text-align: center;
 
     @include media($small) {
-      @include span-columns(4);
+      @include span-columns(5);
+      @include omega();
+      margin-top: -.55em;
       text-align: right;
-      margin: 0;
+
+      @include media($medium) {
+        @include span-columns(4);
+      }
+
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: darken($medium-grey, 15);
+      @include transition (fill .2s ease-in-out);
+
+      @include media($small) {
+        width: 48px;
+        height: 48px;
+      }
+
+    }
+
+    a:hover svg {
+      fill: #fff;
     }
 
   }

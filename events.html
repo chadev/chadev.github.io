@@ -1,43 +1,52 @@
 ---
 layout: default
 ---
-        <main id="calendar">
-            <noscript>
-                Sorry, you need JavaScript to view this page
-                <div class="calendar-container">
-                <iframe src="https://www.google.com/calendar/embed?title=Chadev%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=4qc3thgj9ocunpfist563utr6g%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                </div>
-            </noscript>
-        </main>
+<div id="calendar">
+  <noscript>
+    Sorry, you need JavaScript to view this page
+    <div class="calendar-container">
+      <iframe src="https://www.google.com/calendar/embed?title=Chadev%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=4qc3thgj9ocunpfist563utr6g%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </noscript>
+</div>
 
-        <script type="text/mustache" id="template">
-        {% raw %}
-            {{#events.length}}
-            <ul id="events" class="no-bullet vcal">
-                {{#events}}
-                <li>
-                    <time class="block">
-                        <span class="day"> {{ day }}</span>
-                        <span class="date">{{ month }} {{ date }} </span> 
-                        <span class="time"> {{ time }}</span>
-                    </time>
-                    <h3 class="description">{{{ title }}}</h3>
-                    {{#address}}
-                    <address class="location"><a href="http://maps.google.com/?q={{ address }}" title="Get Directions">{{ address }}</a></address>
-                    {{/address}}
-                    <div class="notes">{{{ content }}}</div>
-                </li>
-                {{/events}}
-            </ul>
-            {{/events.length}}
-            {{^events.length}}
-            <p class="no-events">There are no events for this&nbsp;month.</p>
-            {{/events.length}}
-        {% endraw %}
-        </script>
-        <script src="http://www.google.com/jsapi"></script>
-        <script src="/assets/js/mustache.js"></script>
-        <script src="/assets/js/viewcal.js"></script>
-        <script type="text/javascript">
-            loadCalendar('https://www.google.com/calendar/feeds/4qc3thgj9ocunpfist563utr6g@group.calendar.google.com/public/full');
-        </script>
+<script type="text/mustache" id="template">
+  {% raw %}
+    {{#dates.length}}
+      {{#dates}}
+        <div class="date">
+          <h2>{{prettyDate}}</h2>
+          <div id="events" class="no-bullet vcal">
+            {{#events}}
+              <div class="event">
+                <time>
+                  {{ time }}
+                  <span class="meridian">
+                    {{ meridian }}
+                  </span>
+                </time>
+                <div class="event-details">
+                  <h3 class="description">{{{ title }}}</h3>
+                  <div class="notes">{{{ content }}}</div>
+                  {{#address}}
+                    <address class="location">
+                      <a href="http://maps.google.com/?q={{ address }}" title="Get Directions">
+                        {{ address }}
+                      </a>
+                    </address>
+                  {{/address}}
+                </div>
+              </div>
+            {{/events}}
+          </div>
+        </div>
+      {{/dates}}
+    {{/dates.length}}
+    {{^dates.length}}
+      <p class="no-events">There are no events for this&nbsp;month.</p>
+    {{/dates.length}}
+  {% endraw %}
+</script>
+<script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/events.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>

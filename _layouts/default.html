@@ -6,8 +6,14 @@
 
     {% if page.featured-image %}
       <div class="featured">
-        <!-- <img src="{{ site.url }}/assets/images/{{ page.featured-image.url }}" alt="{{ page.featured-image.title }}"> -->
-      </div>
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="/assets/images/{{ page.featured-image.large-image }}" media="(min-width: 1200px)">
+        <source srcset="/assets/images/{{ page.featured-image.medium-image }}" media="(min-width: 47em)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/assets/images/{{ page.featured-image.small-image }}" alt="{{ page.featured-image.alt-text }}">
+      </picture>
+    </div>
     {% endif %}
 
     <main role="main">

@@ -27,10 +27,10 @@ title: Groups
         {% for url in page.urls %}
 
           {% if url.name == "website" %}
-            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/link-icon.svg" alt=""></a>
+            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/profile-icons/link-icon.svg" alt=""></a>
 
           {% elsif url.name == "twitter" %}
-            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/twitter-icon.svg" alt=""></a>
+            <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/profile-icons/twitter-icon.svg" alt=""></a>
 
           {% elsif url.name %}
           <a href="{{ url.url }}">{{ url.name }}</a>
@@ -40,7 +40,7 @@ title: Groups
         {% endfor %}
 
         {% if page.code-of-conduct %}
-        <a href="{{ page.code-of-conduct }}"><img src="/assets/images/icons/document.svg" alt=""></a>
+        <a href="{{ page.code-of-conduct }}"><img src="/assets/images/icons/profile-icons/document.svg" alt=""></a>
         {% endif %}
 
       </div>
@@ -53,8 +53,7 @@ title: Groups
 
 <section class="callout">
   <h2>Get listed!</h2>
-  <p>Want to have your development group listed here? Make sure you have a publically available 
+  <p>Want to have your development group listed here? Make sure you have a publically available
   <a href="/coc">Code of Conduct</a> (Chadev's is based off <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">this guideline</a>),
   and <a href="https://github.com/chadev/chadev.github.io">submit a pull request</a> on GitHub.</p>
 </section>
-

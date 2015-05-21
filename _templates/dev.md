@@ -9,5 +9,7 @@ urls:
         url: <URL to your Twitter page>
     -   name: google+
         url: <URL to your Google+ page>
+    -   name: facebook
+        url: <URL to your Facebook page>
 layout: default
 ---

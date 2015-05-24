@@ -37,6 +37,12 @@ $ bundle install
 $ jekyll serve
 ~~~
 
+If that fails you may need to run the Jekyll server with `bundle exec`.
+
+~~~ sh
+$ bundle exec jekyll serve
+~~~
+
 ###Open Browser
 
 Navigate to http://localhost:4000/

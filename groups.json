@@ -1,0 +1,24 @@
+---
+layout: json
+---
+{
+        "groups": [
+                {% for page in site.data.groups %}
+                {
+                        "name": "{{ page.name }}",
+                        "github": "{{ page.github }}",
+                        "code-of-conduct": "{{ page.code-of-conduct }}",
+                        "gravatar-id": "{{ page.gravatar-id }}"{% if page.urls %},
+                        "urls": [
+                                {% for url in page.urls %}
+                                {
+                                        "name": "{{ url.name }}",
+                                        "url": "{{ url.url }}"
+                                }{% if forloop.last == false %},{% endif %}
+                                {% endfor %}
+                        ]
+                        {% endif %}
+                }{% if forloop.last == false %},{% endif %}
+                {% endfor %}
+        ]
+}

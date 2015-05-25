@@ -16,6 +16,7 @@ GEM
     ffi (1.9.6)
     ffi (1.9.6-x86-mingw32)
     hitimes (1.2.2)
+    hitimes (1.2.2-x86-mingw32)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -62,6 +63,7 @@ GEM
       hitimes
     toml (0.1.2)
       parslet (~> 1.5.0)
+    wdm (0.1.0)
     yajl-ruby (1.1.0)
     yajl-ruby (1.1.0-x86-mingw32)
 
@@ -72,3 +74,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   sass
+  wdm (~> 0.1.0)

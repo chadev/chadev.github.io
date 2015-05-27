@@ -4,7 +4,7 @@ github: agentofcode
 gravatar-id: 0433be0fb46517533e7ffcf2dfff1fac
 urls:
     -   name: website
-        url: gigcitycode.com
+        url: http://www.gigcitycode.com
     -   name: twitter
         url: https://twitter.com/gigcitycode
     -   name: google+

@@ -2,26 +2,28 @@
 <html lang="en" class="no-js">
   {% include head.html %}
   <body>
-    {% include header.html %}
+    <div class="footer-fixer">
+      {% include header.html %}
 
-    {% if page.featured-image %}
-      <div class="featured">
-      <picture>
-        <!--[if IE 9]><video style="display: none;"><![endif]-->
-        <source srcset="/assets/images/{{ page.featured-image.large-image }}" media="(min-width: 1200px)">
-        <source srcset="/assets/images/{{ page.featured-image.medium-image }}" media="(min-width: 47em)">
-        <!--[if IE 9]></video><![endif]-->
-        <img srcset="/assets/images/{{ page.featured-image.small-image }}" alt="{{ page.featured-image.alt-text }}">
-      </picture>
-    </div>
-    {% endif %}
-
-    <main role="main">
-      <div class="container">
-        {{ content }}
+      {% if page.featured-image %}
+        <div class="featured">
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="/assets/images/{{ page.featured-image.large-image }}" media="(min-width: 1200px)">
+          <source srcset="/assets/images/{{ page.featured-image.medium-image }}" media="(min-width: 47em)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="/assets/images/{{ page.featured-image.small-image }}" alt="{{ page.featured-image.alt-text }}">
+        </picture>
       </div>
-    </main>
+      {% endif %}
 
-    {% include footer.html %}
+      <main role="main">
+        <div class="container">
+          {{ content }}
+        </div>
+      </main>
+
+      {% include footer.html %}
+    </div>
   </body>
 </html>

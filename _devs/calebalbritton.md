@@ -3,7 +3,7 @@ name: Caleb Albriton
 github: C0deMaver1ck
 gravatar-id: ''
 urls:
-    -   name: Personal Site
+    -   name: website
         url: http://www.calebalbritton.com
     -   name: twitter
         url: https://twitter.com/C0deMaver1ck

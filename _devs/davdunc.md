@@ -4,7 +4,7 @@ github: davdunc
 gravatar-id: 9318e2ca3a55a4394b34e8fa88cb2f20
 urls:
     -   name: website
-	url: https://about.me/davdunc
+        url: https://about.me/davdunc
     -   name: twitter
         url: https://mobile.twitter.com/davdunc
     -   name: google+

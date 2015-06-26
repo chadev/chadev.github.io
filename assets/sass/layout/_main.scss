@@ -11,6 +11,7 @@ main {
   }
 
   .container {
+    padding-bottom: 4rem;
     @include outer-container;
   }
 

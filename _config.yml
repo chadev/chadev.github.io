@@ -15,6 +15,8 @@ links:
     url: /coc
   - title: Jobs
     url: http://jobs.chadev.com
+  - title: Slack
+    url: http://chadev-slackin.herokuapp.com/
 
 # Custom collection settings
 collections:

@@ -7,6 +7,5 @@ urls:
         url: http://codingprime.com
     -   name: twitter
         url: http://twitter.com/t3hpr1m3
-    -   name: github
 layout: default
 ---

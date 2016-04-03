@@ -7,5 +7,7 @@ urls:
         url: http://www.roushtech.net
     -   name: twitter
         url: http://www.twitter.com/StrangeWill
+    -   name: stackoverflow
+        url: https://stackoverflow.com/users/713907/strangewill
 layout: default
 ---

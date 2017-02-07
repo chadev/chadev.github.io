@@ -4,5 +4,5 @@ gem 'jekyll'
 gem 'sass'
 
 platforms :mswin, :mingw do
-  gem 'wdm', '~> 0.1.0'
+  gem 'wdm', '~> 0.1.1'
 end

@@ -32,7 +32,7 @@ title: Groups
           {% elsif url.name == "twitter" %}
             <a href="{{ url.url }}"><img src="{{ site.url }}/assets/images/icons/profile-icons/twitter-icon.svg" alt=""></a>
 
-          {% elsif url.name %}
+          {% elsif url.name != "meetup" %}
           <a href="{{ url.url }}">{{ url.name }}</a>
 
           {% endif %}

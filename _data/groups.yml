@@ -21,6 +21,8 @@
     urls:
         -   name: website
             url: http://lambdaloungecha.github.io/
+        -   name: meetup
+            url: http://www.meetup.com/Chattanooga-Lambda-Lounge
 
 -   name: GDG Gigcity
     github: GDG-Gigcity
@@ -29,6 +31,8 @@
     urls:
       -   name: website
           url: http://gdggigcity.com/
+      -   name: meetup
+          url: http://www.meetup.com/GDG-Gigcity
 
 -   name: Chadev Python
     github: chadev

@@ -1,9 +1,9 @@
-#Chadev.com
+# Chadev.com
 
 The future home of chadev.com. Woot!  
 We'll be designing and developing this publicly, so expect to see lots of changes and few bugs ;)
 
-##Adding yourself to the developers list
+## Adding yourself to the developers list
 
 We invite anyone who identifies as a developer or is interested in becoming a developer in Chattanooga to join our community.
 
@@ -11,27 +11,27 @@ For directions on how to add yourself see [the Wiki page](https://github.com/cha
 
 Feel free to contact us via the [#chadev IRC channel on freenode](https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev), or email chadevhelp@gmail.com if you have trouble.
 
-##Instructions for Local Development
+## Instructions for Local Development
 
 To replicate our development environment a number of open source tools are required, specifically:
 
 * [Jekyll](http://jekyllrb.com)
 
-##Getting Started
+## Getting Started
 
-###Install bundler
+### Install bundler
 
 ~~~ sh
 $ gem install bundler
 ~~~
 
-###Have bundler resolve your dependencies
+### Have bundler resolve your dependencies
 
 ~~~ sh
 $ bundle install
 ~~~
 
-###Run Jekyll Server
+### Run Jekyll Server
 
 ~~~ sh
 $ jekyll serve
@@ -43,11 +43,11 @@ If that fails you may need to run the Jekyll server with `bundle exec`.
 $ bundle exec jekyll serve
 ~~~
 
-###Open Browser
+### Open Browser
 
 Navigate to http://localhost:4000/
 
-##Acquiring an API key for the events page
+## Acquiring an API key for the events page
 
 1. Go to the [Google Developers Console](https://console.developers.google.com).
 2. Create a new project.

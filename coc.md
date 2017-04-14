@@ -2,21 +2,25 @@
 layout: default
 ---
 
-#Chadev Code of Conduct
+# Looking for Slack? Or need help?
+
+For a slack invite read the code of conduct below and send us an email.
+
+Ditto for other inquiries.
+
+[chadevhelp@gmail.com](mailto:chadevhelp@gmail.com)
+
+## Chadev Code of Conduct
 
 All attendees, speakers, sponsors and volunteers at our events are required to agree with the following code of conduct. Organisers will enforce this code throughout the community. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
 
 tl;dr: Don’t be a Jerk.
 
-##Need Help?
-
-Email the community leadership at [chadevhelp@gmail.com](mailto:chadevhelp@gmail.com)
-
-##The Quick Version
+## The Quick Version
 
 Our events are dedicated to providing a harassment-free community experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, parties, Twitter and other online media. Community participants violating these rules may be sanctioned or expelled from events without a refund at the discretion of the event organisers.
 
-##The Less Quick Version
+## The Less Quick Version
 
 Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
 

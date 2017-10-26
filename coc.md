@@ -22,11 +22,17 @@ Sponsors are also subject to the anti-harassment policy. In particular, sponsors
 
 If a participant engages in harassing behavior, the organisers may take any action they deem appropriate, including warning the offender or expulsion from the event with no refund.
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the Chadev leadership. See help email above.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the Chadev leadership in person, on Slack, or by email: chadevhelp@gmail.com
 
 Community leaders will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the events. We value your attendance.
 
 We expect participants to follow these rules at community events and workshop venues and community-related social events.
+
+## Reporting
+
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. chadevhelp@gmail.com
+
+### Source
 
 Original source and credit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & The Ada Initiative
 Please help by translating or improving: [http://github.com/leftlogic/confcodeofconduct.com](http://github.com/leftlogic/confcodeofconduct.com)

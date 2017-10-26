@@ -2,15 +2,7 @@
 layout: default
 ---
 
-# Looking for Slack? Or need help?
-
-For a slack invite read the code of conduct below and send us an email.
-
-Ditto for other inquiries.
-
-[chadevhelp@gmail.com](mailto:chadevhelp@gmail.com)
-
-## Chadev Code of Conduct
+# Chadev Code of Conduct
 
 All attendees, speakers, sponsors and volunteers at our events are required to agree with the following code of conduct. Organisers will enforce this code throughout the community. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
 

@@ -5,6 +5,8 @@ url: http://chadev.github.io
 
 # Links to include in header/footer
 links:
+  - title: Live
+    url: /live
   - title: Devs
     url: /devs
   - title: Groups

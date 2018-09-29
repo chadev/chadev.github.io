@@ -41,3 +41,10 @@
     urls:
       -   name: website
           url: http://www.meetup.com/Chattanooga-Python-User-Group/
+-   name: Devanooga
+    github: devanooga
+    code-of-conduct: http://devanooga.com/code-of-conduct/
+    gravatar-id: 09ce08e351a3affde0ffe7b6b74f2789
+    urls:
+        -   name: website
+            url: http://devanooga.com/

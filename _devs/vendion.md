@@ -7,5 +7,7 @@ urls:
         url: https://vendion.me
     -   name: google+
         url: https://google.com/+AdamJimerson
+    -   name: bsd.network
+        url: https://bsd.network/@vendion
 layout: default
 ---

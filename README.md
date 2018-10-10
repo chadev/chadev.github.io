@@ -1,6 +1,6 @@
 # Chadev.com
 
-The future home of chadev.com. Woot!  
+The future home of chadev.com. Woot!
 We'll be designing and developing this publicly, so expect to see lots of changes and few bugs ;)
 
 ## Adding yourself to the developers list
@@ -9,12 +9,14 @@ We invite anyone who identifies as a developer or is interested in becoming a de
 
 For directions on how to add yourself see [the Wiki page](https://github.com/chadev/chadev.github.io/wiki/Adding-yourself-to-the-Devs-list)
 
-Feel free to contact us via the [#chadev IRC channel on freenode](https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev), or email chadevhelp@gmail.com if you have trouble.
+Feel free to contact us via the [Chadev Slack](https://chadev.typeform.com/to/nCm0Ap), or email chadevhelp@gmail.com if you have trouble.
 
 ## Instructions for Local Development
 
 To replicate our development environment a number of open source tools are required, specifically:
 
+* [Ruby](https://www.ruby-lang.org/) version 2.3.x+
+* [RubyGems](https://rubygems.org/pages/download) If not packaged with Ruby
 * [Jekyll](http://jekyllrb.com)
 
 ## Getting Started
@@ -37,7 +39,7 @@ $ bundle install
 $ jekyll serve
 ~~~
 
-If that fails you may need to run the Jekyll server with `bundle exec`.
+If that fails with an error about missing dependencies, you may need to run the Jekyll server with `bundle exec`.
 
 ~~~ sh
 $ bundle exec jekyll serve
@@ -46,6 +48,9 @@ $ bundle exec jekyll serve
 ### Open Browser
 
 Navigate to http://localhost:4000/
+
+For more information about options for the Jekyll server, such as binding to a
+specific address or port, see `jekyll --help`.
 
 ## Acquiring an API key for the events page
 

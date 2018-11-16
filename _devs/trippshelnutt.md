@@ -1,7 +1,7 @@
 ---
 name: Tripp Shelnutt
 github: trippshelnutt
-gravatar-id: 352A2F934C65BCBDFA4CFCCF1253CEDB
+gravatar-id: 352a2f934c65bcbdfa4cfccf1253cedb
 urls:
     -   name: website
         url: http://trippshelnutt.info

@@ -47,3 +47,6 @@ sass:
 gravatar_sizes:
   devs: 300
   groups: 300
+
+plugins:
+  - jekyll-redirect-from

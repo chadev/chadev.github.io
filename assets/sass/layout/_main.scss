@@ -1,9 +1,13 @@
-html,
+// For sticky footer
+// see: https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 body {
-  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
+  flex: 1;
   @include pad(5% 5% 5.5% 5%);
 
   @include media($small) {
@@ -11,7 +15,6 @@ main {
   }
 
   .container {
-    padding-bottom: 5rem;
     @include outer-container;
   }
 

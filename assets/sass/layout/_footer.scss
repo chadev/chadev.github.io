@@ -1,7 +1,4 @@
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 
   @include pad(2em 5%);
   background-color: darken($dark-grey, 10);
@@ -82,12 +79,6 @@ footer {
 
   }
 
-}
-
-.footer-fixer {
-  min-height: 100%;
-  padding-bottom: 70px;
-  position: relative;
 }
 
 .copyright {

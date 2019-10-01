@@ -36,6 +36,9 @@ title: Devs
           {% elsif url.name == "stackoverflow" %}
             <a href="{{ url.url }}"><img src="/assets/images/icons/profile-icons/stackoverflow-icon.svg" alt=""></a>
 
+          {% elsif url.name == "bsd.network" %}
+            <a href="{{ url.url }}"><img src="/assets/images/icons/profile-icons/freebsd-icon.svg" alt=""></a>
+
           {% elsif url.name %}
             <a href="{{ url.url }}">{{ url.name }}</a>
           {% endif %}

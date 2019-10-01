@@ -7,3 +7,4 @@ _site/
 *.sublime-project
 *.sw*
 *.css.map
+.jekyll-metadata

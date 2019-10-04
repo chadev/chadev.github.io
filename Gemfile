@@ -1,8 +1,2 @@
 source 'https://rubygems.org'
-
-gem 'jekyll'
-gem 'sass'
-
-platforms :mswin, :mingw do
-  gem 'wdm', '~> 0.1.1'
-end
+gem 'github-pages', group: :jekyll_plugins

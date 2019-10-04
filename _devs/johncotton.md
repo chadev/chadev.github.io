@@ -7,5 +7,7 @@ urls:
         url: https://johncotton.us
     -   name: twitter
         url: https://twitter.com/thejohncotton
+    -   name: github
+        url: https://github.com/thejohncotton
 layout: default
 ---

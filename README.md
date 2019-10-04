@@ -64,6 +64,14 @@ specific address or port, see `jekyll --help`.
 8. It should look something like `gapi.client.setApiKey('YOUR API KEY);`.
 9. Wait a few moments, then navigate to [http://localhost:4000/events/](http://localhost:4000/events/) to make sure it worked.
 
+## Contributing :book:
+
+Interested in contributing to this project? Check out our [contributing information](CONTRIBUTING.md)
+
+## Contributers
+
+If you've contributed to this project please add yourself to our [CONTRIBUTORS.md](CONTRIBUTORS.md) file.
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).

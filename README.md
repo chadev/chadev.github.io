@@ -1,7 +1,6 @@
 # Chadev.com
 
-The future home of chadev.com. Woot!
-We'll be designing and developing this publicly, so expect to see lots of changes and few bugs ;)
+The home of [https://chadev.com](chadev.com). Woot!
 
 ## Adding yourself to the developers list
 

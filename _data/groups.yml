@@ -24,16 +24,6 @@
         -   name: meetup
             url: http://www.meetup.com/Chattanooga-Lambda-Lounge
 
--   name: GDG Gigcity
-    github: GDG-Gigcity
-    code-of-conduct: http://gdggigcity.com/coc
-    gravatar-id: 8f7ea1efbdd28a1ab27f6611bf5bd78f
-    urls:
-      -   name: website
-          url: http://gdggigcity.com/
-      -   name: meetup
-          url: http://www.meetup.com/GDG-Gigcity
-
 -   name: Chadev Python
     github: chadev
     code-of-conduct: http://chadev.github.io/coc/

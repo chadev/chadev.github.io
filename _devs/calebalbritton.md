@@ -1,13 +1,11 @@
 ---
 name: Caleb Albriton 
-github: C0deMaver1ck
+github: WA9ACE
 gravatar-id: 'b7a21f13af91fd302b1b14e90b5890ba'
 urls:
     -   name: website
-        url: http://www.calebalbritton.com
+        url: http://wa9ace.net
     -   name: twitter
-        url: https://twitter.com/C0deMaver1ck
-    -   name: google+
-        url: https://www.google.com/+CalebAlbritton
+        url: https://twitter.com/WA9ACE
 layout: default
 ---

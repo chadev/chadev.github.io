@@ -1,8 +1,8 @@
-# Adding to the Devs list
+# Adding to the Members list
 
-The goal of this page is to help get yourself added to the [Devs list](http://chadev.github.io/devs/).  If anytime the directions are unclear or you need help with something, feel free to reach out on [the #chadev IRC channel on freenode](https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev) or via email, by emailing one of the Chadev leads or at chadevhelp@gmail.com and we would be more than happy to help you out.
+The goal of this page is to help get yourself added to the [Members list](http://chadev.github.io/members/).  If anytime the directions are unclear or you need help with something, feel free to reach out on [the #chadev IRC channel on freenode](https://kiwiirc.com/client/irc.freenode.net/?nick=chadev-?#chadev) or via email, by emailing one of the Chadev leads or at chadevhelp@gmail.com and we would be more than happy to help you out.
 
-## Getting on the Devs list
+## Getting on the Members list
 
 1. Fork the chadev.github.io repo.
   ![GitHub Fork button](http://i.imgur.com/0K2fyDs.png)
@@ -42,7 +42,7 @@ Fields that are required are:
 
 ### Name
 
-The ```name``` field is for your name as you would like it to appear on the Devs page.
+The ```name``` field is for your name as you would like it to appear on the Members page.
 
 ### Github
 

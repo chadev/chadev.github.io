@@ -5,7 +5,9 @@ layout: default
   <noscript>
     Sorry, you need JavaScript to view this page
     <div class="calendar-container">
-      <iframe src="https://www.google.com/calendar/embed?title=Chadev%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=4qc3thgj9ocunpfist563utr6g%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <iframe
+        src="https://www.google.com/calendar/embed?title=Chadev%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=4qc3thgj9ocunpfist563utr6g%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York"
+        style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
   </noscript>
 </div>
@@ -47,6 +49,10 @@ layout: default
     {{/dates.length}}
   {% endraw %}
 </script>
+<script>
+  var icalURLs = ['{{ site.data.icals | join: "', '" }}'];
+</script>
 <script src="/assets/js/mustache.js"></script>
+<script src="/assets/js/ical.js"></script>
 <script src="/assets/js/events.js"></script>
 <script src="https://apis.google.com/js/client.js?onload=init"></script>

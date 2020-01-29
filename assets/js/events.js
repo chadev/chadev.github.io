@@ -1,106 +1,47 @@
-function init() {
-  window.body = document.body;
-  window.cal  = document.getElementById('calendar');
-  window.days = [
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat"
-  ];
-  window.months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ];
-  window.tmpl = document.getElementById('template').innerHTML;
-  window.cal.innerHTML = '';
-  window.body.classList.add('loading');
-  gapi.client.setApiKey('AIzaSyCp_IflIV150pu3Quu-XDIaM7tMYlfO4DQ');
-  gapi.client.load('calendar', 'v3').then(execute);
-}
+let days = [
+  "Sun",
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat"
+];
+let months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
 
-function execute() {
-  var start = new Date();
-  start.setTime(start.getTime() - (60 * 60 * 24 * 5));
-  displayEventsFor(start);
-}
+var arrangedEvents = {};
 
-function displayEventsFor(start, end) {
-  end = end || getEndOfMonth(start);
-  var currentStart = start;
-  var request = gapi.client.calendar.events.list({
-    "calendarId": "4qc3thgj9ocunpfist563utr6g@group.calendar.google.com",
-    "singleEvents": "True",
-    "orderBy": "startTime",
-    "timeMin": start.toISOString(),
-    "timeMax": end.toISOString()
-
-  });
-  request.then(displayEvents);
-
-  function getEndOfMonth(start) {
-    var end = new Date(start.getTime());
-    end.setMonth(start.getMonth() + 1);
-    end = new Date(end - (24 * 60 * 60 * 1000));
-    end.setHours(23);
-    end.setMinutes(59);
-    end.setSeconds(59);
-    end.setMilliseconds(999);
-    return end;
-  }
-}
-
-function displayEvents(data) {
-  var events          = [],
-      arrangedEvents  = {},
-      today           = Date.now();
-
-  data.result.items.forEach(function(item) {
-    var obj        = {};
-    obj.title      = item.summary.replace('/', '/<wbr>');
-    obj.content    = autolink(item.description);
-    obj.start      = startDate(item.start);
-    obj.time       = prettyTime(obj.start);
-    obj.meridian   = meridian(obj.start);
-    console.log(item);
-
+class Event {
+  constructor(title, content, location, start) {
+    let address = '';
     try {
-      obj.address = item.location.replace(', United States', '');
-    } catch(e) {
+      address = location.replace(', United States', '');
+    } catch (e) {
       // Do nothing
     }
 
-    var key = dateKey(obj.start);
-    var date = arrangedEvents[key] || { events: [], prettyDate: '' };
-    date.prettyDate = date.prettyDate || prettyDate(obj.start);
-    date.events.push(obj);
-    arrangedEvents[key] = date;
-  });
+    this.title = title;
+    this.address = address;
+    this.content = this.autolink(content);
+    this.start = this.startDate(start);
+    this.time = this.prettyTime(this.start);
+    this.meridian = this.meridian(this.start);
+  }
 
-  arrangedEvents = convertToArray(arrangedEvents);
-
-  var templatedata = {
-    'dates': arrangedEvents
-  };
-
-  window.cal.innerHTML = window.Mustache.render(window.tmpl, templatedata);
-  window.body.classList.remove('loading');
-
-  return;
-
-  function prettyTime(start) {
+  prettyTime(start) {
     return hour(start) + ":" + minutes(start);
 
     function hour(time) {
@@ -112,47 +53,142 @@ function displayEvents(data) {
       var m = time.getUTCMinutes();
       return m < 10 ? "0" + m : m;
     }
-
   }
 
-  function meridian(time) {
+  meridian(time) {
     return time.getHours() >= 12 ? 'PM' : 'AM';
   }
 
-  function prettyDate(start) {
-    var day   = days[start.getDay()],
-        month = months[start.getMonth()],
-        date  = start.getDate();
-    return day + ", " + month + " " + date;
-  }
-
-  function startDate(start) {
+  startDate(start) {
     var date = start.dateTime ? start.dateTime : start.date;
+    date = date ? date : start;
     return new Date(date);
   }
 
-  function dateKey(date) {
-    return date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate();
-  }
-
-  function autolink(text) {
-    if(typeof(text) == 'undefined') { return text; }
+  autolink(text) {
+    if (typeof (text) == 'undefined') { return text; }
 
     // http://jsfiddle.net/kachibito/hEgvc/1/light/
-    return text.replace(/((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g,"<a href='$1'>$1</a>");
+    return text.replace(/((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g, "<a href='$1'>$1</a>");
   }
+}
 
-  function formatTime(date) {
-    var output = [];
-    output.push((date.getHours() % 12) || 12);
-    output.push(':');
-    output.push(('0' + date.getMinutes()).slice(-2));
-    output.push(date.getHours() > 11 ? ' p.m.' : ' a.m.');
-    return output.join('');
-  }
+Event.prettyDate = function (start) {
+  var day = days[start.getDay()],
+    month = months[start.getMonth()],
+    date = start.getDate();
+  return day + ", " + month + " " + date;
+}
+
+function dateKey(date) {
+  return date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate();
+}
+
+function addEvent(obj) {
+  var key = dateKey(obj.start);
+  var date = arrangedEvents[key] || { events: [], prettyDate: '' };
+  date.prettyDate = date.prettyDate || Event.prettyDate(obj.start);
+  date.events.push(obj);
+  arrangedEvents[key] = date;
+}
+
+const loadRSS = () =>
+  icalURLs.forEach(fetchRSS);
+
+function fetchRSS(url) {
+  fetch('https://cors-anywhere.herokuapp.com/' + url)
+    .then(response => response.text())
+    .then(cal => ical.parseICS(cal))
+    .then(data => {
+      for (let k in data) {
+        if (data.hasOwnProperty(k)) {
+          var item = data[k];
+          if (data[k].type == 'VEVENT') {
+            addEvent(new Event(
+              item.summary.replace('/', '/<wbr>'),
+              item.description,
+              item.location,
+              item.start,
+            ));
+          }
+        }
+      }
+    })
+    .then(render);
+}
+
+function init() {
+  window.body = document.body;
+  window.cal = document.getElementById('calendar');
+  window.tmpl = document.getElementById('template').innerHTML;
+  window.cal.innerHTML = '';
+  window.body.classList.add('loading');
+
+  loadRSS();
+  gapi.client.setApiKey('AIzaSyCp_IflIV150pu3Quu-XDIaM7tMYlfO4DQ');
+  gapi.client.load('calendar', 'v3').then(execute);
+}
+
+function execute() {
+  var start = new Date();
+  start.setTime(start.getTime() - (60 * 60 * 24 * 5));
+  const end = getEndOfMonth(start);
+
+  [
+    '4qc3thgj9ocunpfist563utr6g@group.calendar.google.com', // Chadev
+  ].forEach(function (calendar) {
+    displayEventsFor(start, end, calendar);
+  })
+}
+
+function displayEventsFor(start, end, calendar) {
+  gapi.client.calendar.events.list({
+    "calendarId": calendar,
+    "singleEvents": "True",
+    "orderBy": "startTime",
+    "timeMin": start.toISOString(),
+    "timeMax": end.toISOString(),
+  })
+    .then(addEvents)
+    .then(render);
+}
+
+function getEndOfMonth(start) {
+  var end = new Date(start.getTime());
+  end.setMonth(start.getMonth() + 1);
+  end = new Date(end - (24 * 60 * 60 * 1000));
+  end.setHours(23);
+  end.setMinutes(59);
+  end.setSeconds(59);
+  end.setMilliseconds(999);
+  return end;
+}
+
+function addEvents(data) {
+  data.result.items.forEach(function (item) {
+    addEvent(new Event(
+      item.summary.replace('/', '/<wbr>'),
+      item.description,
+      item.location,
+      item.start,
+    ));
+  });
+}
+
+function render() {
+  const dates = convertToArray(arrangedEvents);
+
+  var templatedata = {
+    'dates': dates
+  };
+
+  window.cal.innerHTML = window.Mustache.render(window.tmpl, templatedata);
+  window.body.classList.remove('loading');
+
+  return;
 
   function convertToArray(obj) {
-    var arr =  Object.keys(obj).map(function(key) {
+    var arr = Object.keys(obj).map(function (key) {
       return obj[key];
     });
 

@@ -4,9 +4,6 @@ description: "A community for Chattanooga Developers"
 url: http://chadev.github.io
 
 # Links to include in header/footer
-links:
-  - title: Live
-    url: # no current live link yet
   - title: Devs
     url: /devs
   - title: Groups

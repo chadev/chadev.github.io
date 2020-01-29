@@ -1,7 +1,6 @@
 # Chadev.com
 
-The future home of chadev.com. Woot!
-We'll be designing and developing this publicly, so expect to see lots of changes and few bugs ;)
+The home of [https://chadev.com](chadev.com). Woot!
 
 ## Adding yourself to the developers list
 
@@ -63,6 +62,14 @@ specific address or port, see `jekyll --help`.
 7. Copy the new API key and replace the one located in the [event.js file](assets/js/events.js).
 8. It should look something like `gapi.client.setApiKey('YOUR API KEY);`.
 9. Wait a few moments, then navigate to [http://localhost:4000/events/](http://localhost:4000/events/) to make sure it worked.
+
+## Contributing :book:
+
+Interested in contributing to this project? Check out our [contributing information](CONTRIBUTING.md)
+
+## Contributers
+
+If you've contributed to this project please add yourself to our [CONTRIBUTORS.md](CONTRIBUTORS.md) file.
 
 ## License
 
